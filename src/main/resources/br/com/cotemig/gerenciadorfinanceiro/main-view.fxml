@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="br.com.cotemig.gerenciadorfinanceiro.controller.MainController"
+            prefWidth="1000"
+            prefHeight="650">
+
+    <top>
+        <VBox styleClass="cabecalho">
+            <padding>
+                <Insets top="20" right="25" bottom="20" left="25"/>
+            </padding>
+
+            <Label text="Gerenciador Financeiro"
+                   styleClass="titulo-aplicacao"/>
+        </VBox>
+    </top>
+
+    <left>
+        <VBox spacing="10"
+              prefWidth="200"
+              styleClass="menu-lateral">
+            <padding>
+                <Insets top="25" right="15" bottom="25" left="15"/>
+            </padding>
+
+            <Button text="Dashboard"
+                    maxWidth="Infinity"
+                    onAction="#abrirDashboard"/>
+
+            <Button text="Contas"
+                    maxWidth="Infinity"
+                    onAction="#abrirContas"/>
+
+            <Button text="Transações"
+                    maxWidth="Infinity"
+                    onAction="#abrirTransacoes"/>
+
+            <Button text="Categorias"
+                    maxWidth="Infinity"
+                    onAction="#abrirCategorias"/>
+
+            <Button text="Metas"
+                    maxWidth="Infinity"
+                    onAction="#abrirMetas"/>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="areaConteudo"
+                   styleClass="area-conteudo"/>
+    </center>
+
+</BorderPane>

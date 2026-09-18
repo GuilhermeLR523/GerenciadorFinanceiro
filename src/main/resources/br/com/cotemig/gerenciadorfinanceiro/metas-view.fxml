@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="br.com.cotemig.gerenciadorfinanceiro.controller.MetaController"
+      spacing="20">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="Metas"
+           styleClass="titulo-pagina"/>
+
+    <HBox spacing="10">
+
+        <Button text="+ Nova Meta"
+                styleClass="botao-principal"
+                onAction="#abrirNovaMeta"/>
+
+        <Button text="+ Adicionar Valor"
+                onAction="#adicionarValor"/>
+
+        <Button text="Desativar / Reativar"
+                onAction="#alterarStatus"/>
+
+        <Button text="Excluir"
+                styleClass="botao-excluir"
+                onAction="#excluirMeta"/>
+
+    </HBox>
+
+    <Label fx:id="labelMensagem"
+           styleClass="mensagem"
+           wrapText="true"/>
+
+    <TableView fx:id="tabelaMetas"
+               VBox.vgrow="ALWAYS">
+
+        <columns>
+
+            <TableColumn fx:id="colunaNome"
+                         text="Meta"
+                         prefWidth="180"/>
+
+            <TableColumn fx:id="colunaObjetivo"
+                         text="Objetivo"
+                         prefWidth="130"/>
+
+            <TableColumn fx:id="colunaAtual"
+                         text="Valor Atual"
+                         prefWidth="130"/>
+
+            <TableColumn fx:id="colunaProgresso"
+                         text="Progresso"
+                         prefWidth="100"/>
+
+            <TableColumn fx:id="colunaPrazo"
+                         text="Prazo"
+                         prefWidth="110"/>
+
+            <TableColumn fx:id="colunaStatus"
+                         text="Status"
+                         prefWidth="100"/>
+
+        </columns>
+
+    </TableView>
+
+</VBox>

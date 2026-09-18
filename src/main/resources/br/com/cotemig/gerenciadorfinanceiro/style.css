@@ -1,0 +1,124 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f4f5f7;
+}
+
+/* TÍTULOS */
+
+.titulo-pagina {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #20252b;
+}
+
+.subtitulo {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #20252b;
+}
+
+.titulo-aplicacao {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* CABEÇALHO E MENU */
+
+.cabecalho {
+    -fx-background-color: #20252b;
+}
+
+.menu-lateral {
+    -fx-background-color: #2b3138;
+}
+
+.menu-lateral .button {
+    -fx-max-width: infinity;
+    -fx-background-color: #f4f4f4;
+    -fx-text-fill: #20252b;
+}
+
+.menu-lateral .button:hover {
+    -fx-background-color: #dddddd;
+}
+
+.area-conteudo {
+    -fx-background-color: #f4f5f7;
+}
+
+/* BOTÕES */
+
+.button {
+    -fx-cursor: hand;
+    -fx-padding: 8px 14px;
+    -fx-background-radius: 5px;
+}
+
+.botao-principal {
+    -fx-background-color: #20252b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.botao-principal:hover {
+    -fx-background-color: #343b44;
+}
+
+.botao-excluir {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.botao-excluir:hover {
+    -fx-background-color: #b02a37;
+}
+
+/* CAMPOS */
+
+.text-field,
+.combo-box,
+.date-picker,
+.text-area {
+    -fx-background-radius: 5px;
+}
+
+/* TABELAS */
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 5px;
+}
+
+.table-view .column-header {
+    -fx-font-weight: bold;
+}
+
+/* CARDS DO DASHBOARD */
+
+.card {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e1e1e1;
+    -fx-border-radius: 8px;
+}
+
+.card-titulo {
+    -fx-font-size: 16px;
+    -fx-text-fill: #555555;
+}
+
+.card-valor {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #20252b;
+}
+
+/* MENSAGENS */
+
+.mensagem {
+    -fx-font-size: 13px;
+}
